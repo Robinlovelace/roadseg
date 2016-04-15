@@ -8,13 +8,15 @@ output: github_document
 
 ```{r, echo = FALSE}
 knitr::opts_chunk$set(
+  warning = FALSE,
+  message = FALSE,
   collapse = TRUE,
   comment = "#>",
   fig.path = "README-"
 )
 ```
 
-```{r}
+```{r, include=FALSE}
 library(sp)
 library(tmap)
 library(rgeos)
